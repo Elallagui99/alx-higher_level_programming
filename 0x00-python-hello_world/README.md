@@ -12,7 +12,7 @@
 *    How to use strings
 *    What are indexing and slicing in Python
 *    What is the official Python coding style and how to check your code with pycodestyle
-##__Resources__
+## __Resources__
 
 *    [The Python tutorial](https://docs.python.org/3/tutorial/index.html "Title")
 *    [Whetting Your Appetite](https://docs.python.org/3/tutorial/appetite.html "Title")
