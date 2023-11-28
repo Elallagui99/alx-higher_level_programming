@@ -1,30 +1,24 @@
 #include <stdlib.h>
 #include "lists.h"
-
 /**
- * find_listint_loop - find loop in listed link
- * @head: pointer to head of list
- * Return: 1 if there is no cycle, 0 otherwise
+ * check_cycle - Checks if a singly-linked list contains a cycle.
+ * @list: A singly-linked list.
+ *
+ * Return: If there is no cycle - 0.
+ *         If there is a cycle - 1.
  */
-
-int *find_listint_loop(listint_t *head)
+int check_cycle(listint_t *list)
 {
-	listint_t *fast, *slow;
+	listint_t *slow, *fast;
 
-	slow = head->next;
-	fast = head->next->next;
-	while (fast)
+	if (list == NULL || list->next == NULL)
+		return (0);
+	slow = list->next;
+	fast = list->next->next;
+	while (slow && fast && fast->next)
 	{
 		if (slow == fast)
-		{
-			slow = head;
-			while (slow != fast)
-			{
-				slow = slow->next;
-				fast = fast->next;
-			}
-			return (1);
-		}
+		return (1);
 		slow = slow->next;
 		fast = fast->next->next;
 	}
