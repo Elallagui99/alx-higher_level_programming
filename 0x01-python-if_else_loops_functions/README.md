@@ -3,7 +3,7 @@
 
 ## __Resources__
 
-## _Read or watch:_
+### _Read or watch:_
 
 *    [More Control Flow Tools](https://intranet.alxswe.com/rltoken/jpjs5EnZTpBLLEremJYjPQ "Title")
 *    [IndentationError](https://intranet.alxswe.com/rltoken/F9n2AE-fpEPzt2PfBMGYAQ "Title")
