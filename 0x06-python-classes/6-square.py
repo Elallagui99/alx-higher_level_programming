@@ -6,16 +6,14 @@
 class Square:
     """Represent a square."""
 
-    def __init__(self, size=0, position(0, 0)):
+    def __init__(self, size=0, position=(0, 0)):
         """initialize a new square
         Args:
             size(int): size of new square
             position: square cordination
         """
         self.__size = size
-        self.position = position
-
-    def
+        self.position = position 
 
     @property
     def size(self):
@@ -29,8 +27,8 @@ class Square:
             raise ValieError("size must be  >= 0")
         self.__size = value
 
-    @proprety
-    def posittion(self):
+    @property
+    def position(self):
         return self.__position
 
     @position.setter
