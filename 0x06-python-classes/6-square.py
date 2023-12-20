@@ -13,7 +13,7 @@ class Square:
             position: square cordination
         """
         self.__size = size
-        self.position = position 
+        self.position = position
 
     @property
     def size(self):
